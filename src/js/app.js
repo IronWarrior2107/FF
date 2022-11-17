@@ -48,4 +48,3 @@ flsForms.formRating();
 
 import "./files/script.js";
 
-import "../src/js/index.js"

@@ -16,7 +16,7 @@ export const path = {
         files: `${buildFolder}/files/` // все файлы из папки с исходниками переносятся в папку с результатом
     }, // путь к папке с результатом
     src: {
-        js: `${srcFolder}/js/**/*.js`,
+        js: `${srcFolder}/js/app.js`,
         images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`, // можно продолжить список
         svg: `${srcFolder}/img/**/*.svg`,
         scss: `${srcFolder}/scss/style.scss`,
@@ -28,8 +28,8 @@ export const path = {
         js: `${srcFolder}/js/**/*.js`,
         scss: `${srcFolder}/scss/**/*.scss`,
         html: `${srcFolder}/**/*.html`, // наблюдение за всеми html фалами, где бы они не были
-        images: `${srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
-        svgicons: `${srcFolder}/svg/**/*.svg`,
+        images: `{srcFolder}/img/**/*.{jpg,jpeg,png,svg,gif,ico,webp}`,
+        svgicons: `{srcFolder}/svg/**/*.svg`,
         files: `${srcFolder}/files/**/*.*` // наблюдатель за файлами 
     },
     clean: buildFolder,
