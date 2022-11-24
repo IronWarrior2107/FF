@@ -1,6 +1,7 @@
 @use 'sass:math';
 .mobile-menu {
     &__wrapper {
+
         display: none;
     }
 }
@@ -25,7 +26,35 @@ button {
         flex: 1 1 auto;
     }
 }
-
+.menu-top-header{
+    &__body {
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 5px;
+        @include adaptiveValue("column-gap", 30, 20);
+    }
+    &__item {
+        &:first-child{
+            margin-left: rem(20);
+        }
+        @media (max-width: $tablet) {
+            &:first-child{
+                margin-left: rem(5);
+            }
+        }
+    }
+    &__link {
+        font-size: rem(16);
+        line-height: math.div(20,16);
+        @media (any-hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
 .body-header {
     padding: 0px rem(10);
     background-color: rgb(241, 226, 226);
@@ -37,20 +66,17 @@ button {
     &__logo {
         @extend %ic;
         @extend ._icon-logo;
-        font-size: rem(102);
+        @include adaptiveValue("font-size", 100, 70);
         color: $mainDarkColor;
     }
     &__search {
         flex: 1 1 auto;
-        @include adaptiveValue("padding-left", 50,20);
         padding-right: rem(20);
-        gap: rem(20);
-        
+        @include adaptiveValue("padding-left", 70, 20, 1620, 1250, 1);
     }
     &__menu {
     }
 }
-
 .category {
     display: block;
     max-width: rem(250);
@@ -60,13 +86,11 @@ button {
     margin-right: rem(50);
     margin-bottom: 20px;
 }
-
 .border{
     border-right-color: #52ee2b; 
     border-right-style: solid; 
     border-right-width: rem(1); 
 }
-
 .menu-catalog {
     &__sub-menu {
         display: none;
@@ -78,7 +102,6 @@ button {
         transition: all 1s ease-out;
     }
 }
-
 ._sub-menu-show {
     display: block;
     opacity: 1;
@@ -204,9 +227,12 @@ button {
     display: flex;
     align-items: center;
     column-gap: rem(30);
-    padding: rem(15) rem(70);
     justify-content: center;
     height: 100%;
+    }
+    &__container{
+        margin-right: 80px;
+        margin-left: 20px;
     }
     }
 .hamburger {
@@ -301,6 +327,7 @@ button {
         font-weight: 600;
         line-height: math.div(10,5);
         @include adaptiv-font(15, 10);
+        @include adaptiveValue("margin-right", 0, 0, 1620, 1400, 1);
         &::before {
             flex: 1 1 auto;
             text-align: center;
@@ -318,14 +345,17 @@ button {
     display: flex;
     column-gap: rem(30);
     align-items: center;
+    @include adaptiveValue("column-gap", 30, 15, 1620, 1200, 1); 
     &:hover{
         color: green;
         transition: 0.5s;
     }
     &__icon {
+        cursor: pointer;
         flex: 0 0 37px;
         position: relative;
-        font-size: rem(35);
+        font-size: rem(50);
+        margin-bottom: rem(20);
         span{
             position: absolute;
             width: rem(14);
@@ -344,6 +374,10 @@ button {
         font-size: rem(16);
         line-height: math.div(20, 16);
         flex: 0 0 auto;
+        margin-bottom: rem(10);
+        @media (max-width: em(1250)){
+            display: none;
+        }
     }
     &__summ {
         margin-bottom: em(5, 16);
@@ -351,32 +385,12 @@ button {
     }
     &__link {
         color: yellow;
+        cursor: pointer;
     }
 }
 ._icon-cart {
 }
 //
-.menu {
-    &__body {
-    }
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        row-gap: 5px;
-        @include adaptiveValue("column-gap", 60, 20)
-    }
-    &__item {
-    }
-    &__link {
-        font-size: rem(10);
-        line-height: math.div(10,6);
-        @media (any-hover: hover) {
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-}
 ._icon-user {
 }
 .catalog-header {
@@ -398,7 +412,6 @@ button {
     overflow: hidden;
     padding: rem(0);
 }
-
 
 .menu-catalog {
     &__list {
@@ -445,15 +458,12 @@ button {
 @media (max-width: $tablet) {
     .mobile-menu {
         &__wrapper {
-            display: inline-block;
+            display: block;
         }
     }
-    .menu-burger {
-        &__container {
-            display: none;
-        }
+    .body-header {
+        &__menu{ 
+        display: none;
     }
 }
-
-
-
+}
