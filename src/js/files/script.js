@@ -2,7 +2,6 @@
 import { isMobile } from "./functions.js";
 import { formsModules } from "./forms/forms.js";
 
-
 let hamburger_1 = document.querySelector('.mobile-menu');
 
 hamburger_1.addEventListener('click', function() {
@@ -36,16 +35,61 @@ function documentActions(e) {
     }
 }
 
-
 $(function () {
-    $('.topmenu ul li').hover(
+        $('.sub-menu-catalog__category-wrapper').hover(
         function () {
-        $(this).find('ul').stop(true, true);
-        $(this).find('ul').fadeIn('fast');
-    },
-    function () {
-        $(this).find('ul').fadeOut('stop');
-    }
+            $('.sub-menu-catalog__wrapper ul').css("display", "block").fadeOut(0);
+            $(this).find('ul').fadeIn(100);
+        }
     );
 });
 
+const mobileMenu = document.querySelector('.mobile-menu__wrapper');
+if (mobileMenu){
+    const menuBody = document.querySelector('.top-header__container');
+    mobileMenu.addEventListener("click", function(e) {
+        menuBody.classList.toggle('menu-open')
+    });
+}
+
+$(document).ready(function() {
+    $('.main-class').click(function() {
+    $(this).siblings(".catalog-сlosed").toggle(
+        function () {
+            $(this).find('ul').slideDown();
+        },
+        function() {
+            $(this).find('ul').slideUp('fast');
+        }
+        )});
+    });
+    
+    $(document).ready(function() {
+        $('.sub-class').click(function() {
+        $(this).siblings(".sub-catalog-сlosed").toggle(
+            function () {
+                $(this).find('ul').slideDown();
+            },
+            function() {
+                $(this).find('ul').slideUp('fast');
+            }
+            )});
+        });
+
+
+// $(function () {
+//     $('.menu-top-header__subitem').hover(
+//     function () {
+//         $('menu-top-header__subitem ul').css("display", "block").fadeOut(0);
+//         $(this).find('ul').slideDown();
+//     },
+//     function() {
+//             $(this).find('ul').slideUp('fast');
+//         }
+// );
+// });
+
+// function getRandom(min, max) {
+//     return Math.round(Math.random() * (max - min) + min)
+// };
+// console.log(getRandom(10, 42));

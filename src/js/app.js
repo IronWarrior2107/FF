@@ -1,31 +1,14 @@
 import * as flsFunctions from "./files/functions.js";
 
+import "./files/jquery-3.6.1.min.js"
+
 flsFunctions.isWebp();
-
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-const swiper = new Swiper();
 
 /* Динамический адаптив */
 import "./libs/dynamic_adapt.js";
 
 /* Форматирование чисел */
 //import './libs/wNumb.min.js';
-
-// Основные модули ========================================================================================================================================================================================================================================================
-import * as flsFunctions from "./files/functions.js";
-
-/* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
-/* (i) необходимо для корректного отображения webp из css  */
-flsFunctions.isWebp();
-/* Добавление класса touch для HTML если браузер мобильный */
-// flsFunctions.addTouchClass();
-/* Добавление loaded для HTML после полной загрузки страницы */
-// flsFunctions.addLoadedClass();
-/* Модуль для работы с меню (Бургер) */
-flsFunctions.menuInit();
-/* Учет плавающей панели на мобильных устройствах при 100vh */
-// flsFunctions.fullVHfix();
 
 /*
 Модуль работы со спойлерами
@@ -145,4 +128,4 @@ flsFunctions.tabs();
 
 import "./files/script.js";
 
-import "../src/js/index.js"
+//import "../src/js/index.js"
