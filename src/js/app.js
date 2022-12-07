@@ -125,7 +125,6 @@ flsFunctions.tabs();
 */
 // import "./files/gallery.js";
 
-
 import "./files/script.js";
 
 //import "../src/js/index.js"

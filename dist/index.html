@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/hamburgers.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Главная</title>
 </head>
     <body>
@@ -374,12 +374,30 @@
 
 
 
-            <main>
-
+            <main class="page page_home">
+                <section>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../img/poster_11.jpg"></div>
+            <div class="swiper-slide"><img src="../img/poster_2.jpg"></div>
+            <div class="swiper-slide"><img src="../img/poster_3.jpg"></div>
+            <div class="swiper-slide"><img src="../img/poster_4.jpg"></div>
+            <div class="swiper-slide"><img src="../img/poster_5.jpg"></div>
+            <div class="swiper-slide"><img src="../img/poster_6.jpg"></div>
+            <div class="swiper-slide"><img src="../img/poster_7.jpg"></div>
+            <div class="swiper-slide"><img src="../img/poster_8.jpg"></div>
+            <div class="swiper-slide"><img src="../img/poster_9.jpg"></div>
+        </div>
+            <div class="swiper-button-prev"><img class="arrow" src="..\img\arrow-left.svg"></div>
+            <div class="swiper-button-next"><img class="arrow" src="..\img\arrow-right.svg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+</section>
             </main>
             <footer></footer>
         </div>
-        <script type="module" src="js/app.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="module" src="js/app.js"></script>
 
     </body>
 </html>
