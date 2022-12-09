@@ -5,6 +5,7 @@ section{
     justify-content: center;
     align-items: center;
     min-width: 0;
+    position: relative;
 }
 .swiper {
     z-index: 11;
@@ -16,6 +17,11 @@ section{
 }
 .swiper-wrapper{
 }
+.pagination-indent{
+    margin-top: rem(560);
+    position: absolute;
+}
+
 .swiper-slide > img{ 
     width: 100%;
     height: 100%;
@@ -26,9 +32,11 @@ section{
     position: absolute;
 }
 .swiper-pagination {
+    overflow: hidden;
     width: calc(100% - 10%);
+    margin-top: 10px;
     position: absolute;
-    top: 680px;
+    width:100%;
 }
 .swiper-pagination > span {
     background-color: darkslateblue;
@@ -68,3 +76,5 @@ section{
 .swiper-button-next {
     margin-right: rem(10);
 }
+
+
