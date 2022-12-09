@@ -1,4 +1,4 @@
-// Импорт функционала ==============================================================================================================================================================================================================================================================================================================================
+// // Импорт функционала ==============================================================================================================================================================================================================================================================================================================================
 import { isMobile } from "./functions.js";
 import { formsModules } from "./forms/forms.js";
 
@@ -19,15 +19,10 @@ document.addEventListener("click",documentActions);
 function documentActions(e) {
     const targetElement = e.target;
     if (targetElement.closest('[data-parent]')) {
-        const subMenuId = targetElement.dataset.parent ? targetElement.dataset.parent : null;
         const subMenu = document.querySelector(`[data-submenu]`);
-        const catalogMenu = document.querySelector('.sub-menu-catalog');
         const catalogHeader = document.querySelector('.catalog-header');
         if (subMenu){
             catalogHeader.classList.toggle('_menu-none');
-            catalogMenu.classList.toggle('_sub-menu-show');
-            targetElement.classList.toggle('_sub-menu-active');
-            subMenu.classList.toggle('_sub-menu-open');
         }else {
             console.log('No')
         }
@@ -90,8 +85,18 @@ const swiper = new Swiper('.swiper', {
 	},
     initialSlide: 3,
     loop: true,
+    autoplay: {
+        delay: 3500,
+        stopOnLastSlide: false,
+        disableOnInteractio: true,
+    }
 });
 // function getRandom(min, max) {
 //     return Math.round(Math.random() * (max - min) + min)
 // };
-// console.log(getRandom(10, 42));
+//console.log(getRandom(10, 42));
+$(document).ready(function(){
+    $('.body-header__menu').click(function(){
+    $('#hint').slideToggle('fast');
+    });
+    });

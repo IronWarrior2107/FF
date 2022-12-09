@@ -176,9 +176,6 @@ button {
 }
 .menu-catalog {
     &__sub-menu {
-        display: none;
-        opacity: 0;
-        visibility: hidden;
         background-color: rgb(235, 230, 230);
         height: rem(500);
         padding-top: rem(10);
@@ -193,11 +190,6 @@ button {
         overflow: auto;
     }
 }
-._sub-menu-show {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-}
 ._sub-menu-open {
     opacity: 1;
     visibility: visible;
@@ -208,6 +200,10 @@ button {
     visibility: visible;
 }
 .sub-menu-catalog {
+    z-index: 15;
+    position: absolute;
+    width: 100%;
+    height: 450px;
     &__container {
         display: flex;
         align-items: center;
@@ -321,6 +317,7 @@ button {
 .menu-closed {
     display: none;
 }
+
 .menu-burger {
     &__container {
     display: flex;

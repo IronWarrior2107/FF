@@ -1,12 +1,14 @@
 section{
     width: 100%;
     height: 53vh;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     min-width: 0;
 }
 .swiper {
+    z-index: 11;
+    position: relative;
     width: calc(100% - 10%);
     height: calc(50vh - rem(4));
     border: rem(1) solid green;
@@ -32,6 +34,9 @@ section{
     background-color: darkslateblue;
     width: rem(25);
     height: rem(25);
+    @media (max-width: $tablet) {
+        display: none;
+    }
 }
 
 .swiper-button-prev {
