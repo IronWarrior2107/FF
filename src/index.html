@@ -7,7 +7,12 @@
         <div class="wrapper">
             @@include('html/header.html',{})
             <main class="page page_home">
-                @@include('html/swiper.html',{})
+                <section class="page__main-block main-block">
+                    @@include('html/swiper.html',{})
+                </section>
+                <section class="page__catalog-cards catalog-cards">
+                    @@include('html/catalog-cards.html',{})
+                </section>
             </main>
             @@include('html/footer.html',{})
         </div>

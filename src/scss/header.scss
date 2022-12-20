@@ -317,7 +317,6 @@ button {
 .menu-closed {
     display: none;
 }
-
 .menu-burger {
     &__container {
     display: flex;
@@ -370,6 +369,7 @@ button {
         }
     }
     &__input {
+        outline:none;
         width: 100%;
 		background-color: transparent;
 		border-radius: rem(3);
