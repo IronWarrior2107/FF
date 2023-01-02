@@ -19,9 +19,9 @@ EffectFade, Lazy, Manipulation
 // Базовые стили
 import "../../scss/base/swiper.scss";
 // Полный набор стилей из scss/libs/swiper.scss
-// import "../../scss/libs/swiper.scss";
+import "../../scss/libs/swiper.scss";
 // Полный набор стилей из node_modules
-// import 'swiper/css';
+import 'swiper/css';
 
 // Добавление классов слайдерам
 // swiper главному блоку, swiper-wrapper оболочке, swiper-slide для слайдов
@@ -106,8 +106,8 @@ function initSliders() {
 			}
 		});
 	}
-	if (document.querySelector('.products-slider')) {
-		new Swiper('.products-slider__slider', {
+	if (document.querySelector('.productss-slider')) {
+		new Swiper('.productss-slider__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation, Pagination, Autoplay],
@@ -131,7 +131,7 @@ function initSliders() {
 			//lazy: true,
 			// Dotts
 			pagination: {
-				el: '.products-slider__dotts',
+				el: '.productss-slider__dotts',
 				clickable: true,
 				dynamicBullets: true
 			},
@@ -161,8 +161,8 @@ function initSliders() {
 			}
 		});
 	}
-	if (document.querySelector('.products-new')) {
-		new Swiper('.products-new__slider', {
+	if (document.querySelector('.productss-new')) {
+		new Swiper('.productss-new__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation, Pagination, Autoplay],
@@ -186,7 +186,7 @@ function initSliders() {
 			//lazy: true,
 			// Dotts
 			pagination: {
-				el: '.products-new__dotts',
+				el: '.productss-new__dotts',
 				clickable: true,
 				dynamicBullets: true
 			},
@@ -238,7 +238,7 @@ function initSliders() {
 			//lazy: true,
 			// Dotts
 			pagination: {
-				el: '.products-new__dotts',
+				el: '.productss-new__dotts',
 				clickable: true,
 				dynamicBullets: true
 			},
@@ -258,7 +258,7 @@ function initSliders() {
 				}
 			}
 		});
-		new Swiper('.images-product__slider', {
+		new Swiper('.images-products__slider', {
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation, Pagination, Autoplay, Thumbs],
@@ -330,3 +330,4 @@ window.addEventListener("load", function (e) {
 	// Запуск инициализации скролла на базе слайдера (по классу swiper_scroll)
 	//initSlidersScroll();
 });
+

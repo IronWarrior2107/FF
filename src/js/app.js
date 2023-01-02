@@ -32,7 +32,7 @@ flsFunctions.tabs();
 // flsFunctions.showMore();
 
 // Работа с формами ========================================================================================================================================================================================================================================================
-//import * as flsForms from "./files/forms/forms.js";
+import * as flsForms from "./files/forms/forms.js";
 
 /* Работа с полями формы: добавление классов, работа с placeholder. */
 //flsForms.formFieldsInit();
@@ -41,16 +41,16 @@ flsFunctions.tabs();
 //flsForms.formSubmit(true);
 
 /* (В работе) Работа с масками. Для включения ??? (подсказок в консоли) передать true */
-// flsForms.formMasks(true);
+//flsForms.formMasks(true);
 
 /* Модуль формы "колличество" */
 //flsForms.formQuantity();
 
 /* Модуль формы "показать пароль" */
-// flsForms.formViewpass();
+//flsForms.formViewpass();
 
 /* Модуль звездного рейтинга */
-//flsForms.formRating();
+flsForms.formRating();
 
 /* Модуль работы с select. Для включения ??? (подсказок в консоли) передать true */
 //flsForms.formSelect(false);
@@ -79,7 +79,7 @@ flsFunctions.tabs();
 Документация плагина: https://swiperjs.com/
 Сниппет(HTML): swiper
 */
-//import "./files/sliders.js";
+import "./files/sliders.js";
 
 // Модули работы с прокруткой страницы ========================================================================================================================================================================================================================================================
 
@@ -126,5 +126,6 @@ flsFunctions.tabs();
 // import "./files/gallery.js";
 
 import "./files/script.js";
+
 
 //import "../src/js/index.js"

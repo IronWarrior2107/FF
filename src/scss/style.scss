@@ -143,9 +143,10 @@ body {
 // Подключение стилей отдельных страниц
 // @import "home";
 // @import "catalog";
-// @import "product";
+// @import "products";
 @import "swiper";
 @import "catalog-cards";
+@import "product-slider";
 
 .page {
 	// .page_home
@@ -170,8 +171,8 @@ body {
 	// .page__articles-module
 	// &__articles-module {
 	// }
-	// .page__products-block
-	// &__products-block {
+	// .page__productss-block
+	// &__productss-block {
 	// }
 }
 

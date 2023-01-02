@@ -7,12 +7,11 @@
         <div class="wrapper">
             @@include('html/header.html',{})
             <main class="page page_home">
-                <section class="page__main-block main-block">
+                <div>
                     @@include('html/swiper.html',{})
-                </section>
-                <section class="page__catalog-cards catalog-cards">
                     @@include('html/catalog-cards.html',{})
-                </section>
+                    @@include('html/product-slider.html',{}) 
+                </div>
             </main>
             @@include('html/footer.html',{})
         </div>

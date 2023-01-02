@@ -6,7 +6,7 @@
     }
     }
     .catalog-cards {
-    @include adaptiveValue("padding-top", 20, 20);
+    @include adaptiveValue("padding-top", 40, 30);
 	@include adaptiveValue("padding-bottom", 70, 30);
     &__conteiner {
         display: grid;

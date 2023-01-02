@@ -64,6 +64,11 @@ button {
 				text-decoration: underline;
 			}
 		}
+        @media (max-width: $tablet) {
+			&:hover {
+				text-decoration: none;
+			}
+		}
 		&_catalog {
 			display: flex;
 			align-items: center;
@@ -286,7 +291,7 @@ button {
     &__main-name {
         font-weight: 700;
     }
-    &__main-product {
+    &__main-products {
         max-width: rem(100);
         padding-top: rem(7);
         &:last-child{

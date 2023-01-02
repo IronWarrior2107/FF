@@ -91,6 +91,7 @@ const swiper = new Swiper('.swiper', {
         disableOnInteractio: true,
     }
 });
+
 // function getRandom(min, max) {
 //     return Math.round(Math.random() * (max - min) + min)
 // };
@@ -100,3 +101,5 @@ $(document).ready(function(){
     $('#hint').slideToggle('fast');
     });
     });
+
+    
