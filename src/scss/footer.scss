@@ -1,0 +1,201 @@
+
+.footer {
+	background-color: $mainDarkColor;
+	&__text {
+	}
+	&__container {
+	}
+	&__body {
+	}
+}
+.text-footer {
+	@include adaptiveValue("padding-top", 60, 40);
+	@include adaptiveValue("padding-bottom", 60, 40);
+	background: url("../img/footer/bg.jpg") top / cover no-repeat;
+	&__container {
+	}
+	&__title {
+		text-align: center;
+		font-weight: bold;
+		color: $mainOrange;
+		@include adaptiveValue("font-size", 30, 24);
+		line-height: math.div(46, 30);
+		&:not(:last-child) {
+			margin-bottom: em(30, 30);
+		}
+	}
+	&__text {
+		color: #fff;
+		@include adaptiveValue("font-size", 18, 16);
+		line-height: math.div(27, 18);
+	}
+}
+.body-footer {
+	@include adaptiveValue("padding-top", 50, 20);
+	@include adaptiveValue("padding-bottom", 50, 40);
+	display: grid;
+	@include adaptiveValue("gap", 35, 25);
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(rem(290), 1fr));
+		column-gap: rem(40);
+		@include adaptiveValue("row-gap", 40, 20);
+		&:not(:last-child) {
+			padding: 0px 0px rem(30) 0px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+		}
+	}
+	&__item {
+	}
+	&__bottom {
+		color: rgba(255, 255, 255, 0.8);
+		font-size: rem(14);
+		line-height: math.div(27, 14);
+		@media (min-width: em(1200)) {
+			display: flex;
+			justify-content: space-between;
+			gap: rem(20);
+		}
+	}
+	&__rules {
+		max-width: rem(820);
+	}
+	&__copy {
+		span {
+			white-space: nowrap;
+		}
+	}
+}
+.item-footer {
+	&__spoller {
+	}
+}
+.spoller-item-footer {
+	&__item {
+	}
+	&__title {
+		text-transform: uppercase;
+		color: white;
+		font-weight: 600;
+		line-height: math.div(22, 18);
+		._spoller-init & {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			gap: rem(10);
+			&::after {
+				content: "\e900";
+				font-size: rem(25);
+				align-items: center;
+				transition: transform 0.3s ease 0s;
+				@extend %ic;
+			}
+			&._spoller-active {
+				&::after {
+					transform: rotate(-180deg);
+				}
+			}
+		}
+	}
+	&__text {
+		max-width: rem(320);
+		line-height: math.div(27, 18);
+		color: white;
+		a {
+			color: $mainGreen;
+			@media (any-hover) {
+				&:hover {
+				text-decoration: underline;
+				}
+			}
+		}
+	}
+	&__body {
+		@include adaptiveValue("padding-top", 30, 15);
+		@include adaptiveValue("padding-bottom", 30, 20);
+	}
+	}
+.menu-footer {
+	&:not(:last-child) {
+		@include adaptiveValue("margin-bottom", 32, 20);
+	}
+	&__list {
+	}
+	&__item {
+		line-height: 1.5;
+		display: flex;
+		color: rgba(255, 255, 255, 0.8);
+		&:not(:last-child) {
+			margin-bottom: em(20, 18);
+		}
+		&::before {
+			font-size: rem(19);
+			margin: em(5, 15) em(10, 15) 0px 0px;
+		}
+	}
+	&__link {
+		display: inline-flex;
+		line-height: math.div(27, 18);
+		color: rgba(255, 255, 255, 0.8);
+		transition: all 1.50s ease;
+		&::before {
+			font-size: rem(20);
+			margin: em(5, 15) em(10, 15) 0px 0px;
+		}
+		&:hover {
+			color: $mainGreen;
+			transition: all 1.50s ease;
+		}
+	}
+}
+.social-footer {
+	display: flex;
+	gap: rem(24);
+	&__item {
+	}
+	&__link {
+	}
+}
+
+.footer-subscribe {
+	&__label {
+		line-height: math.div(22, 18);
+		display: block;
+		color: #fff;
+		&:not(:last-child) {
+			margin-bottom: em(10, 18);
+		}
+	}
+	&__line {
+		display: flex;
+		position: relative;
+		.form__error {
+			position: absolute;
+			bottom: -15px;
+			font-size: rem(10);
+			color: red;
+		}
+	}
+	&__input {
+		background: rgba(255, 255, 255, 0.05);
+		height: rem(50);
+		padding: 0px rem(20);
+		color: #fff;
+		width: 100%;
+		border-radius: rem(3) 0 0 rem(3);
+		border: 1px solid #fff;
+		border-right: none;
+	}
+	&__button {
+		border-radius: 0 rem(3) rem(3) 0;
+		flex: 0 0 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $mainGreen;
+		&::before {
+			color: #fff;
+			font-size: rem(25);
+		}
+	}
+}

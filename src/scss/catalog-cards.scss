@@ -1,0 +1,113 @@
+.page {
+    &__catalog-cards {
+        max-width: 99rem;
+        box-sizing: content-box;
+        margin: 0px auto;
+        @media (max-width: $tablet){
+            padding: rem(15);
+        }
+    }
+    }
+    .catalog-cards {
+    @include adaptiveValue("padding-top", 0, 15);
+	@include adaptiveValue("padding-bottom", 50, 30);
+    &__conteiner {
+        display: grid;
+        gap: rem(30);
+        @media (min-width:$mobileSmall) {
+            grid-template-columns: repeat(auto-fit, minmax(rem(400), 1fr));
+        }
+    }
+    &__item {
+    }
+    }
+    .item-catalog-cards {
+        border-radius: 5%;
+        overflow: hidden;
+        box-shadow: rem(0) rem(4) rem(20) rgb(0, 192, 42);
+        position: relative;
+        min-height: rem(250);
+        transform: box-shadow 0.3s ease 0s;
+        @media (any-hover: hover) {
+            &:hover{
+                box-shadow: rem(0) rem(4) rem(20) rgb(0, 138, 30);
+            }
+        }
+    &__body {
+        position: relative;
+        z-index: 2;
+        @include adaptiveValue("padding", 30, 20);
+    }
+    &__title {
+        &:not(:last-child){
+            margin-bottom: em(30, 24);
+        }
+    }
+    &__link-title {
+        font-weight: 600;
+        font-size: rem(24);
+        line-height: math.div(34, 24);
+        display: inline-block;
+        &::after{
+            content: "";
+            width: rem(0);
+            height: rem(2);
+            display: block;
+            background-color: $mainOrange;
+            transition: all 0.8s ease 0s;
+        }
+        @media (any-hover: hover){
+            &:hover{
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__list {
+    }
+    &__item {
+        position: relative;
+        padding-left: rem(20);
+        &::before{
+            content: "";
+            width: rem(7);
+            height: rem(7);
+            background-color: rgb(30, 167, 60);
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: em(9, 18);
+        }
+        &:not(:last-child){
+            margin-bottom: rem(5);
+        }
+    }
+    &__link {
+        font-size: rem(18);
+        line-height: math.div(24, 18);
+        @media (any-hover: hover){
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    &__image {
+        width: 100%;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-self: flex-end;
+        transform: translate(0px, 5%);
+        img {
+            max-width: 100%;
+        }
+        @media (min-width:$mobileSmall) {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+    

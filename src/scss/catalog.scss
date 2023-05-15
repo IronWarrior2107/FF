@@ -1,0 +1,100 @@
+.page {
+    &__header {
+        
+    }
+    &__container {
+    }
+    &__title {
+        font-weight: 700;
+        font-size: rem(24);
+        line-height: math.div(30,25);
+        &:not(:last-child) {
+            margin-bottom: em(25,24);
+        }
+    }
+    &__breadcrumbs {
+    }
+    }
+    .title {
+    }
+    .breadcrumbs {
+        white-space: nowrap;
+        overflow: auto;
+        height: rem(30);
+    &__list {
+        display: flex;
+        &:not(:last-child) {
+            margin-bottom: rem(30);
+        }
+    }
+    &__item {
+    }
+    &__link {
+        opacity: 0.5;
+        display: flex;
+        align-items: center;
+        &::after {
+            content: "\e901";
+            @extend %ic;
+            margin: 0px rem(10);
+        }
+    }
+    &__current {
+        color: $mainGreen;
+    }
+    }
+    .catalog {
+        &__container {
+        }
+        &__body {
+            display: grid;
+            grid-template-columns: rem(375) 1fr;
+            gap: rem(10);
+        }
+        &__filter {
+        }
+        &__content {
+        }
+        &__control {
+            display: flex;
+            justify-content: flex-end;
+            &:not(:last-child) {
+                margin-bottom: rem(20);
+            }
+        }
+        &__products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(rem(250), rem(277)));
+            gap: rem(30);
+        }
+        &__footer {
+        }
+        &__more-button {
+        }
+        &__pagging {
+        }
+        }
+            .pagging {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            &__arrow {
+            }
+            &__arrow-left {
+            }
+            &__list {
+                display: flex;
+                align-items: center;
+                gap: rem(5);
+            }
+            &__item {
+            }
+            &__link {
+                width: rem(34);
+                height: rem(34);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            }
+            
