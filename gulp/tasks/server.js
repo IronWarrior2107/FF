@@ -7,7 +7,7 @@ const server = (done) => {
       baseDir: filePaths.build.html,
     },
     notify: false,
-    port: 3000,
+    port: 2107,
   });
 };
 

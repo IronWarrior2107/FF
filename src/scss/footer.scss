@@ -11,7 +11,7 @@
 .text-footer {
 	@include adaptiveValue("padding-top", 60, 40);
 	@include adaptiveValue("padding-bottom", 60, 40);
-	background: url("../img/footer/bg.jpg") top / cover no-repeat;
+	background: url("@img/footer/bg.jpg") top / cover no-repeat;
 	&__container {
 	}
 	&__title {
