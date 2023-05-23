@@ -1,320 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-    @@include('html/head.html',{
-    "title":"Каталог"
-    })
-    <body>
-        <div class="wrapper">
-            @@include('html/header.html',{})
-            <main class="page page_inner">
-                <div class="page__header">
+<html lang="ru">
+	@@include('html/head.html',{
+	"title":"Каталог"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/header.html',{})
+			<main class="page page_inner">
+				<div class="page__header">
 					<div class="page__container">
-						<h1 class="page__title title">Название категории</h1>
+						<h1 class="page__title title">Разделочные ножи</h1>
 						<nav class="page__breadcrumbs breadcrumbs">
 							<ul class="breadcrumbs__list">
 								<li class="breadcrumbs__item">
 									<a href="" class="breadcrumbs__link">Главная</a>
 								</li>
 								<li class="breadcrumbs__item">
-									<span class="breadcrumbs__current">Название категории</span>
+									<span class="breadcrumbs__current">Разделочные ножи</span>
 								</li>
 							</ul>
 						</nav>
 					</div>
 				</div>
-                <div class="catalog">
-                    <div class="catalog__container">
-                        <div class="catalog__body">
-                            <div class="catalog__filter"></div>
-                            <div class="catalog__content">
-                                <div class="catalog__control">
-                                    <select name="form[]" class="control">
-                                        <option value="1" selected>По популярности</option>
-                                        <option value="2">По популярности</option>
-                                        <option value="3">По популярности</option>
-                                        <option value="4">По популярности</option>
-                                    </select>
-                                </div>
-                                <div class="catalog__products">
-                                    <div class="swiper-slide">
-                                        <div class="products-slider__slider">
-                                            <div class="swiper-slide">
-                                                <div class="products-slider__slider">
-                                                    <div class="products-slider__swiper">
-                                                        <div class="products-slider__slide">
-                                                            <article class="products-cards">
-                                                                <a href="" class="products-cards__image">
-                                                                    <span class="products-cards__item-image-ibg products-cards__item-image-ibg_contain">
-                                                                        <img src="@img/products-cards/01.jpg" alt="Картинка">
-                                                                    </span>
-                                                                </a>
-                                                                <div class="products-cards__body">
-                                                                    <h4 class="products-cards__title"></h4>
-                                                                    <div class="products-cards__info info-products-cards">
-                                                                        <a href="" class="products-cards__link-title">Конструктор LEGO Technic 42123 McLaren Senna GTR</a>
-                                                                    </div>
-                                                                    <div class="products-cards__rating rating rating_set">
-                                                                        <div class="rating__body">
-                                                                            <div class="rating__active"></div>
-                                                                            <div class="rating__items">
-                                                                                <input type="radio" class="rating__item" value="1" name="rating">
-                                                                                <input type="radio" class="rating__item" value="2" name="rating">
-                                                                                <input type="radio" class="rating__item" value="3" name="rating">
-                                                                                <input type="radio" class="rating__item" value="4" name="rating">
-                                                                                <input type="radio" class="rating__item" value="5" name="rating">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="rating__value">5</div>
-                                                                        <div class="rating__info">12 отзывов</div>
-                                                                    </div>
-                                                                    <div class="products-cards__footer">
-                                                                        <div class="products-cards__sale-price">500</div>
-                                                                        <div class="products-cards__price">1 000</div>
-                                                                        <div class="products-cards__sale">-50%</div>
-                                                                        <div class="products-cards__like-button"><span class="products-cards__like _icon-favorite"></span></div>
-                                                                    </div>
-                                                                    <div class="products-cards__description">
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                    </div>
-                                                                    <button typr="button" class="products-cards__cart button"><span class="_icon-cart">В корзину</span></button>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="products-slider__slider">
-                                            <div class="swiper-slide">
-                                                <div class="products-slider__slider">
-                                                    <div class="products-slider__swiper">
-                                                        <div class="products-slider__slide">
-                                                            <article class="products-cards">
-                                                                <a href="" class="products-cards__image">
-                                                                    <span class="products-cards__item-image-ibg products-cards__item-image-ibg_contain">
-                                                                        <img src="@img/products-cards/01.jpg" alt="Картинка">
-                                                                    </span>
-                                                                </a>
-                                                                <div class="products-cards__body">
-                                                                    <h4 class="products-cards__title"></h4>
-                                                                    <div class="products-cards__info info-products-cards">
-                                                                        <a href="" class="products-cards__link-title">Конструктор LEGO Technic 42123 McLaren Senna GTR</a>
-                                                                    </div>
-                                                                    <div class="products-cards__rating rating rating_set">
-                                                                        <div class="rating__body">
-                                                                            <div class="rating__active"></div>
-                                                                            <div class="rating__items">
-                                                                                <input type="radio" class="rating__item" value="1" name="rating">
-                                                                                <input type="radio" class="rating__item" value="2" name="rating">
-                                                                                <input type="radio" class="rating__item" value="3" name="rating">
-                                                                                <input type="radio" class="rating__item" value="4" name="rating">
-                                                                                <input type="radio" class="rating__item" value="5" name="rating">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="rating__value">5</div>
-                                                                        <div class="rating__info">12 отзывов</div>
-                                                                    </div>
-                                                                    <div class="products-cards__footer">
-                                                                        <div class="products-cards__sale-price">500</div>
-                                                                        <div class="products-cards__price">1 000</div>
-                                                                        <div class="products-cards__sale">-50%</div>
-                                                                        <div class="products-cards__like-button"><span class="products-cards__like _icon-favorite"></span></div>
-                                                                    </div>
-                                                                    <div class="products-cards__description">
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                    </div>
-                                                                    <button typr="button" class="products-cards__cart button"><span class="_icon-cart">В корзину</span></button>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="products-slider__slider">
-                                            <div class="swiper-slide">
-                                                <div class="products-slider__slider">
-                                                    <div class="products-slider__swiper">
-                                                        <div class="products-slider__slide">
-                                                            <article class="products-cards">
-                                                                <a href="" class="products-cards__image">
-                                                                    <span class="products-cards__item-image-ibg products-cards__item-image-ibg_contain">
-                                                                        <img src="@img/products-cards/01.jpg" alt="Картинка">
-                                                                    </span>
-                                                                </a>
-                                                                <div class="products-cards__body">
-                                                                    <h4 class="products-cards__title"></h4>
-                                                                    <div class="products-cards__info info-products-cards">
-                                                                        <a href="" class="products-cards__link-title">Конструктор LEGO Technic 42123 McLaren Senna GTR</a>
-                                                                    </div>
-                                                                    <div class="products-cards__rating rating rating_set">
-                                                                        <div class="rating__body">
-                                                                            <div class="rating__active"></div>
-                                                                            <div class="rating__items">
-                                                                                <input type="radio" class="rating__item" value="1" name="rating">
-                                                                                <input type="radio" class="rating__item" value="2" name="rating">
-                                                                                <input type="radio" class="rating__item" value="3" name="rating">
-                                                                                <input type="radio" class="rating__item" value="4" name="rating">
-                                                                                <input type="radio" class="rating__item" value="5" name="rating">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="rating__value">5</div>
-                                                                        <div class="rating__info">12 отзывов</div>
-                                                                    </div>
-                                                                    <div class="products-cards__footer">
-                                                                        <div class="products-cards__sale-price">500</div>
-                                                                        <div class="products-cards__price">1 000</div>
-                                                                        <div class="products-cards__sale">-50%</div>
-                                                                        <div class="products-cards__like-button"><span class="products-cards__like _icon-favorite"></span></div>
-                                                                    </div>
-                                                                    <div class="products-cards__description">
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                    </div>
-                                                                    <button typr="button" class="products-cards__cart button"><span class="_icon-cart">В корзину</span></button>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="products-slider__slider">
-                                            <div class="swiper-slide">
-                                                <div class="products-slider__slider">
-                                                    <div class="products-slider__swiper">
-                                                        <div class="products-slider__slide">
-                                                            <article class="products-cards">
-                                                                <a href="" class="products-cards__image">
-                                                                    <span class="products-cards__item-image-ibg products-cards__item-image-ibg_contain">
-                                                                        <img src="@img/products-cards/01.jpg" alt="Картинка">
-                                                                    </span>
-                                                                </a>
-                                                                <div class="products-cards__body">
-                                                                    <h4 class="products-cards__title"></h4>
-                                                                    <div class="products-cards__info info-products-cards">
-                                                                        <a href="" class="products-cards__link-title">Конструктор LEGO Technic 42123 McLaren Senna GTR</a>
-                                                                    </div>
-                                                                    <div class="products-cards__rating rating rating_set">
-                                                                        <div class="rating__body">
-                                                                            <div class="rating__active"></div>
-                                                                            <div class="rating__items">
-                                                                                <input type="radio" class="rating__item" value="1" name="rating">
-                                                                                <input type="radio" class="rating__item" value="2" name="rating">
-                                                                                <input type="radio" class="rating__item" value="3" name="rating">
-                                                                                <input type="radio" class="rating__item" value="4" name="rating">
-                                                                                <input type="radio" class="rating__item" value="5" name="rating">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="rating__value">5</div>
-                                                                        <div class="rating__info">12 отзывов</div>
-                                                                    </div>
-                                                                    <div class="products-cards__footer">
-                                                                        <div class="products-cards__sale-price">500</div>
-                                                                        <div class="products-cards__price">1 000</div>
-                                                                        <div class="products-cards__sale">-50%</div>
-                                                                        <div class="products-cards__like-button"><span class="products-cards__like _icon-favorite"></span></div>
-                                                                    </div>
-                                                                    <div class="products-cards__description">
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                    </div>
-                                                                    <button typr="button" class="products-cards__cart button"><span class="_icon-cart">В корзину</span></button>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="products-slider__slider">
-                                            <div class="swiper-slide">
-                                                <div class="products-slider__slider">
-                                                    <div class="products-slider__swiper">
-                                                        <div class="products-slider__slide">
-                                                            <article class="products-cards">
-                                                                <a href="" class="products-cards__image">
-                                                                    <span class="products-cards__item-image-ibg products-cards__item-image-ibg_contain">
-                                                                        <img src="@img/products-cards/01.jpg" alt="Картинка">
-                                                                    </span>
-                                                                </a>
-                                                                <div class="products-cards__body">
-                                                                    <h4 class="products-cards__title"></h4>
-                                                                    <div class="products-cards__info info-products-cards">
-                                                                        <a href="" class="products-cards__link-title">Конструктор LEGO Technic 42123 McLaren Senna GTR</a>
-                                                                    </div>
-                                                                    <div class="products-cards__rating rating rating_set">
-                                                                        <div class="rating__body">
-                                                                            <div class="rating__active"></div>
-                                                                            <div class="rating__items">
-                                                                                <input type="radio" class="rating__item" value="1" name="rating">
-                                                                                <input type="radio" class="rating__item" value="2" name="rating">
-                                                                                <input type="radio" class="rating__item" value="3" name="rating">
-                                                                                <input type="radio" class="rating__item" value="4" name="rating">
-                                                                                <input type="radio" class="rating__item" value="5" name="rating">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="rating__value">5</div>
-                                                                        <div class="rating__info">12 отзывов</div>
-                                                                    </div>
-                                                                    <div class="products-cards__footer">
-                                                                        <div class="products-cards__sale-price">500</div>
-                                                                        <div class="products-cards__price">1 000</div>
-                                                                        <div class="products-cards__sale">-50%</div>
-                                                                        <div class="products-cards__like-button"><span class="products-cards__like _icon-favorite"></span></div>
-                                                                    </div>
-                                                                    <div class="products-cards__description">
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                        <a href="" class="products-cards__size">123123123</a>
-                                                                    </div>
-                                                                    <button typr="button" class="products-cards__cart button"><span class="_icon-cart">В корзину</span></button>
-                                                                </div>
-                                                            </article>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__footer">
-                                    <a href="" class="catalog__more-button">
-                                        <div class="catalog__pagging pagging">
-                                            <button type="button" class="pagging__arrow pagging__arrow-left"></button>
-                                            <ul class="pagging__list">
-                                                <li class="pagging__item"><a href="" class="pagging__link">1</a></li>
-                                                <li class="pagging__item"><a href="" class="pagging__link">2</a></li>
-                                                <li class="pagging__item"><a href="" class="pagging__link">3</a></li>
-                                                <li class="pagging__item"><a href="" class="pagging__link">...</a></li>
-                                                <li class="pagging__item"><a href="" class="pagging__link">15</a></li>
-                                            </ul>
-                                            <button type="button" class="pagging__arrow pagging__arrow-left"></button>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+				<div class="catalog">
+					<div class="catalog__container">
 						<div class="catalog__body">
 							<div class="catalog__filter filter-catalog">
 								<button type="button" class="filter-catalog__title">Фильтр товаров</button>
 								<div data-spollers class="filter-catalog__items">
 									<div class="filter-catalog__price price-filter">
-										<button type="button" data-spoller class="price-filter__title _icon-spoller-arrow">Цена</button>
+										<button type="button" data-spoller class="price-filter__title _icon-arrow-bottom">Цена</button>
 										<div data-range class="price-filter__body">
 											<div class="price-filter__inputs">
 												<input data-range-from="0" autocomplete="off" type="text" value="500" name="form[]" class="price-filter__input">
@@ -324,7 +39,7 @@
 										</div>
 									</div>
 									<div class="filter-catalog__item item-filter-catalog">
-										<button type="button" data-spoller class="item-filter-catalog__title _icon-spoller-arrow">Производство</button>
+										<button type="button" data-spoller class="item-filter-catalog__title _icon-arrow-bottom">Производство</button>
 										<div class="item-filter-catalog__body">
 											<div class="item-filter-catalog__checkbox checkbox">
 												<input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
@@ -346,10 +61,293 @@
 									</div>
 								</div>
 							</div>
-                </div>
-            </main>
-            @@include('html/footer.html',{})
-        </div>
-        @@include('html/js.html',{})
-    </body>
+							<div class="catalog__content">
+								<div class="catalog__control">
+									<select name="form[]" class="control">
+										<option value="1" selected>По популярности</option>
+										<option value="2">По популярности</option>
+										<option value="3">По популярности</option>
+										<option value="4">По популярности</option>
+									</select>
+								</div>
+								<div class="catalog__products">
+                                    <div class="swiper-slide">
+                                        <div class="products-slider__slider">
+                                            <div class="swiper-slide">
+                                                <div class="products-slider__slider">
+                                                    <div class="products-slider__swiper">
+                                                        <div class="products-slider__slide">
+                                                            <article class="products-cards">
+                                                                <a href="" class="products-cards__image">
+                                                                    <span class="products-cards__item-image-ibg products-cards__item-image-ibg_contain">
+                                                                        <img src="@img/products-cards/01.jpg" alt="Картинка">
+                                                                    </span>
+                                                                </a>
+                                                                <div class="products-cards__body">
+                                                                    <h4 class="products-cards__title"></h4>
+                                                                    <div class="products-cards__info info-products-cards">
+                                                                        <a href="" class="products-cards__link-title">Конструктор LEGO Technic 42123 McLaren Senna GTR</a>
+                                                                    </div>
+                                                                    <div class="products-cards__rating rating rating_set">
+                                                                        <div class="rating__body">
+                                                                            <div class="rating__active"></div>
+                                                                            <div class="rating__items">
+                                                                                <input type="radio" class="rating__item" value="1" name="rating">
+                                                                                <input type="radio" class="rating__item" value="2" name="rating">
+                                                                                <input type="radio" class="rating__item" value="3" name="rating">
+                                                                                <input type="radio" class="rating__item" value="4" name="rating">
+                                                                                <input type="radio" class="rating__item" value="5" name="rating">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating__value">5</div>
+                                                                        <div class="rating__info">12 отзывов</div>
+                                                                    </div>
+                                                                    <div class="products-cards__footer">
+                                                                        <div class="products-cards__sale-price">500</div>
+                                                                        <div class="products-cards__price">1 000</div>
+                                                                        <div class="products-cards__sale">-50%</div>
+                                                                        <div class="products-cards__like-button"><span class="products-cards__like _icon-favorite"></span></div>
+                                                                    </div>
+                                                                    <div class="products-cards__description">
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                    </div>
+                                                                    <button typr="button" class="products-cards__cart button"><span class="_icon-cart">В корзину</span></button>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="products-slider__slider">
+                                            <div class="swiper-slide">
+                                                <div class="products-slider__slider">
+                                                    <div class="products-slider__swiper">
+                                                        <div class="products-slider__slide">
+                                                            <article class="products-cards">
+                                                                <a href="" class="products-cards__image">
+                                                                    <span class="products-cards__item-image-ibg products-cards__item-image-ibg_contain">
+                                                                        <img src="@img/products-cards/01.jpg" alt="Картинка">
+                                                                    </span>
+                                                                </a>
+                                                                <div class="products-cards__body">
+                                                                    <h4 class="products-cards__title"></h4>
+                                                                    <div class="products-cards__info info-products-cards">
+                                                                        <a href="" class="products-cards__link-title">Конструктор LEGO Technic 42123 McLaren Senna GTR</a>
+                                                                    </div>
+                                                                    <div class="products-cards__rating rating rating_set">
+                                                                        <div class="rating__body">
+                                                                            <div class="rating__active"></div>
+                                                                            <div class="rating__items">
+                                                                                <input type="radio" class="rating__item" value="1" name="rating">
+                                                                                <input type="radio" class="rating__item" value="2" name="rating">
+                                                                                <input type="radio" class="rating__item" value="3" name="rating">
+                                                                                <input type="radio" class="rating__item" value="4" name="rating">
+                                                                                <input type="radio" class="rating__item" value="5" name="rating">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating__value">5</div>
+                                                                        <div class="rating__info">12 отзывов</div>
+                                                                    </div>
+                                                                    <div class="products-cards__footer">
+                                                                        <div class="products-cards__sale-price">500</div>
+                                                                        <div class="products-cards__price">1 000</div>
+                                                                        <div class="products-cards__sale">-50%</div>
+                                                                        <div class="products-cards__like-button"><span class="products-cards__like _icon-favorite"></span></div>
+                                                                    </div>
+                                                                    <div class="products-cards__description">
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                    </div>
+                                                                    <button typr="button" class="products-cards__cart button"><span class="_icon-cart">В корзину</span></button>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="products-slider__slider">
+                                            <div class="swiper-slide">
+                                                <div class="products-slider__slider">
+                                                    <div class="products-slider__swiper">
+                                                        <div class="products-slider__slide">
+                                                            <article class="products-cards">
+                                                                <a href="" class="products-cards__image">
+                                                                    <span class="products-cards__item-image-ibg products-cards__item-image-ibg_contain">
+                                                                        <img src="@img/products-cards/01.jpg" alt="Картинка">
+                                                                    </span>
+                                                                </a>
+                                                                <div class="products-cards__body">
+                                                                    <h4 class="products-cards__title"></h4>
+                                                                    <div class="products-cards__info info-products-cards">
+                                                                        <a href="" class="products-cards__link-title">Конструктор LEGO Technic 42123 McLaren Senna GTR</a>
+                                                                    </div>
+                                                                    <div class="products-cards__rating rating rating_set">
+                                                                        <div class="rating__body">
+                                                                            <div class="rating__active"></div>
+                                                                            <div class="rating__items">
+                                                                                <input type="radio" class="rating__item" value="1" name="rating">
+                                                                                <input type="radio" class="rating__item" value="2" name="rating">
+                                                                                <input type="radio" class="rating__item" value="3" name="rating">
+                                                                                <input type="radio" class="rating__item" value="4" name="rating">
+                                                                                <input type="radio" class="rating__item" value="5" name="rating">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating__value">5</div>
+                                                                        <div class="rating__info">12 отзывов</div>
+                                                                    </div>
+                                                                    <div class="products-cards__footer">
+                                                                        <div class="products-cards__sale-price">500</div>
+                                                                        <div class="products-cards__price">1 000</div>
+                                                                        <div class="products-cards__sale">-50%</div>
+                                                                        <div class="products-cards__like-button"><span class="products-cards__like _icon-favorite"></span></div>
+                                                                    </div>
+                                                                    <div class="products-cards__description">
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                    </div>
+                                                                    <button typr="button" class="products-cards__cart button"><span class="_icon-cart">В корзину</span></button>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="products-slider__slider">
+                                            <div class="swiper-slide">
+                                                <div class="products-slider__slider">
+                                                    <div class="products-slider__swiper">
+                                                        <div class="products-slider__slide">
+                                                            <article class="products-cards">
+                                                                <a href="" class="products-cards__image">
+                                                                    <span class="products-cards__item-image-ibg products-cards__item-image-ibg_contain">
+                                                                        <img src="@img/products-cards/01.jpg" alt="Картинка">
+                                                                    </span>
+                                                                </a>
+                                                                <div class="products-cards__body">
+                                                                    <h4 class="products-cards__title"></h4>
+                                                                    <div class="products-cards__info info-products-cards">
+                                                                        <a href="" class="products-cards__link-title">Конструктор LEGO Technic 42123 McLaren Senna GTR</a>
+                                                                    </div>
+                                                                    <div class="products-cards__rating rating rating_set">
+                                                                        <div class="rating__body">
+                                                                            <div class="rating__active"></div>
+                                                                            <div class="rating__items">
+                                                                                <input type="radio" class="rating__item" value="1" name="rating">
+                                                                                <input type="radio" class="rating__item" value="2" name="rating">
+                                                                                <input type="radio" class="rating__item" value="3" name="rating">
+                                                                                <input type="radio" class="rating__item" value="4" name="rating">
+                                                                                <input type="radio" class="rating__item" value="5" name="rating">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating__value">5</div>
+                                                                        <div class="rating__info">12 отзывов</div>
+                                                                    </div>
+                                                                    <div class="products-cards__footer">
+                                                                        <div class="products-cards__sale-price">500</div>
+                                                                        <div class="products-cards__price">1 000</div>
+                                                                        <div class="products-cards__sale">-50%</div>
+                                                                        <div class="products-cards__like-button"><span class="products-cards__like _icon-favorite"></span></div>
+                                                                    </div>
+                                                                    <div class="products-cards__description">
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                    </div>
+                                                                    <button typr="button" class="products-cards__cart button"><span class="_icon-cart">В корзину</span></button>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="products-slider__slider">
+                                            <div class="swiper-slide">
+                                                <div class="products-slider__slider">
+                                                    <div class="products-slider__swiper">
+                                                        <div class="products-slider__slide">
+                                                            <article class="products-cards">
+                                                                <a href="" class="products-cards__image">
+                                                                    <span class="products-cards__item-image-ibg products-cards__item-image-ibg_contain">
+                                                                        <img src="@img/products-cards/01.jpg" alt="Картинка">
+                                                                    </span>
+                                                                </a>
+                                                                <div class="products-cards__body">
+                                                                    <h4 class="products-cards__title"></h4>
+                                                                    <div class="products-cards__info info-products-cards">
+                                                                        <a href="" class="products-cards__link-title">Конструктор LEGO Technic 42123 McLaren Senna GTR</a>
+                                                                    </div>
+                                                                    <div class="products-cards__rating rating rating_set">
+                                                                        <div class="rating__body">
+                                                                            <div class="rating__active"></div>
+                                                                            <div class="rating__items">
+                                                                                <input type="radio" class="rating__item" value="1" name="rating">
+                                                                                <input type="radio" class="rating__item" value="2" name="rating">
+                                                                                <input type="radio" class="rating__item" value="3" name="rating">
+                                                                                <input type="radio" class="rating__item" value="4" name="rating">
+                                                                                <input type="radio" class="rating__item" value="5" name="rating">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="rating__value">5</div>
+                                                                        <div class="rating__info">12 отзывов</div>
+                                                                    </div>
+                                                                    <div class="products-cards__footer">
+                                                                        <div class="products-cards__sale-price">500</div>
+                                                                        <div class="products-cards__price">1 000</div>
+                                                                        <div class="products-cards__sale">-50%</div>
+                                                                        <div class="products-cards__like-button"><span class="products-cards__like _icon-favorite"></span></div>
+                                                                    </div>
+                                                                    <div class="products-cards__description">
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                        <a href="" class="products-cards__size">123123123</a>
+                                                                    </div>
+                                                                    <button typr="button" class="products-cards__cart button"><span class="_icon-cart">В корзину</span></button>
+                                                                </div>
+                                                            </article>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="catalog__footer">
+                                    <a href="" class="catalog__more-button button button_border">Больше товаров</a>
+                                    <div class="catalog__pagging pagging">
+                                        <button disabled type="button" class="pagging__arrow pagging__arrow-left _icon-arrow-bottom"></button>
+                                        <ul class="pagging__list">
+                                            <li class="pagging__item"><a href="" class="pagging__link _active">1</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">2</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">3</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">...</a></li>
+                                            <li class="pagging__item"><a href="" class="pagging__link">15</a></li>
+                                        </ul>
+                                        <button type="button" class="pagging__arrow pagging__arrow-right _icon-arrow-bottom"></button>
+                                    </div>
+                                </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/footer.html',{})
+		</div>
+		@@include('html/js.html',{})
+	</body>
 </html>

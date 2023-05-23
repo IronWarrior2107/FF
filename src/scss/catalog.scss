@@ -3,6 +3,7 @@
         
     }
     &__container {
+        padding-left: rem(50);
     }
     &__title {
         font-weight: 700;
@@ -12,10 +13,6 @@
             margin-bottom: em(25,24);
         }
     }
-    &__breadcrumbs {
-    }
-    }
-    .title {
     }
     .breadcrumbs {
         white-space: nowrap;
@@ -44,12 +41,16 @@
     }
     }
     .catalog {
+        @include adaptiveValue("margin-bottom", 40, 20);
         &__container {
         }
         &__body {
             display: grid;
-            grid-template-columns: rem(375) 1fr;
+            align-items: start;
             gap: rem(10);
+            @media (min-width: $tablet) {
+                grid-template-columns: rem(375) 1fr;
+            }
         }
         &__filter {
         }
@@ -64,12 +65,31 @@
         }
         &__products {
             display: grid;
-            grid-template-columns: repeat(auto-fill,minmax(rem(250), rem(277)));
+            grid-template-columns: repeat(auto-fit,minmax(rem(250), rem(277)));
             gap: rem(30);
+            &:not(:last-child) {
+                @include adaptiveValue("margin-bottom", 40, 20)
+            }
         }
         &__footer {
+            display: flex;
+            justify-content: space-between;
+            gap: rem(20);
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                align-items: center;
+            }
         }
         &__more-button {
+            display: flex;
+			justify-content: space-between;
+			gap: rem(10);
+            &::after {
+				content: "\e900";
+				font-size: rem(27);
+				align-items: center;
+				@extend %ic;
+			}
         }
         &__pagging {
         }
@@ -78,9 +98,20 @@
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
+                gap: rem(30);
             &__arrow {
+                color: #63ec51;
+                &::before{
+                    font-size: rem(25);
+                    font-weight: 700;
+                    transform: rotate(-90deg);
+                }
+                &:disabled {
+                    color: rgb(208, 204, 204);
+                }
             }
             &__arrow-left {
+                transform: rotate(-180deg);
             }
             &__list {
                 display: flex;
@@ -95,6 +126,100 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                border-radius: 50%;
+                &._active {
+                    background-color: $mainGreen;
+                    color: #fff;
+                }
             }
             }
-            
+    .filter-catalog {
+        background: #fff;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    &__title {
+        width: 100%;
+        background-color: $mainGreen;
+        color: #fff;
+        font-size: rem(20);
+        font-weight: bold;
+        line-height: math.div(24,20);
+        padding: rem(20) rem(30);
+    }
+    &__items {
+    }
+    &__price {
+    }
+    &__item {
+    }
+    }
+    .price-filter {
+        padding: rem(15) rem(30);
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 100%;
+        &::before{
+            color: $mainGreen;
+            font-size: rem(25);
+            transform: rotate(-180deg);
+            transition: transform 0.3s ease 0s;
+        }
+        &._spoller-active {
+            &::before{
+            transform: rotate(0deg);
+        }
+    }
+    }
+    &__body {
+        padding: rem(30) 0px 0px 0px;
+    }
+    &__inputs {
+        display: flex;
+        border: rem(1) solid #cbcbcb;
+        border-radius: rem(3);
+        overflow: hidden;
+        &:not(:last-child) {
+            margin-bottom: rem(30);
+        }
+    }
+    &__input {
+        width: 50%;
+        height: rem(42);
+        padding: 0px rem(15);
+        &:not(:last-child) {
+            border-right: rem(1) solid #cbcbcb;
+        }
+    }
+    &__range {
+    }
+    }
+    .item-filter-catalog {
+    &__title {
+        background-color: $mainGreen;
+        width: 100%;
+        color: white;
+        padding: rem(15) rem(30);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        &::before{
+            font-size: rem(25);
+            transform: rotate(-180deg);
+            transition: transform 0.3s ease 0s;
+        }
+        &._spoller-active {
+            &::before{
+            transform: rotate(0deg);
+        }
+    }
+    }
+    &__body {
+        padding: rem(20);
+    }
+    &__checkbox {
+        
+    }
+    }

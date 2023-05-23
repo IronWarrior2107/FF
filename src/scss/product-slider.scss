@@ -2,6 +2,9 @@
     // @media (max-width: $tablet) {
     //     @include adaptiveValue("max-width", 1600, 1000);
     // }
+    @media (max-width: $mobile) {
+        margin-bottom: rem(30);
+    }
 }
 
 .swiper-section{
@@ -13,9 +16,8 @@
     min-width: 0;
     position: relative;
     @media (max-width: $mobile) {
-        height: 50%;
+        height: 70%;
     }
-    
 }
 .product-swiper {
     padding: 3px;
@@ -89,8 +91,8 @@
 	position: relative;
     border-radius: rem(10);
     @media (max-width: $mobile){
-        max-height: rem(400);
-        min-height: rem(400);
+        max-height: rem(450);
+        min-height: rem(450);
     }
 	@media (any-hover: hover) {
 		&:hover {
@@ -207,7 +209,7 @@
             }
         }
         @media (max-width: $mobile) {
-            display: none;
+            
         }
     }
     &__like-button {
@@ -245,7 +247,7 @@
     display: flex;
     align-items: center;
     gap: rem(10);
-    @media (max-width: $mobileSmall){
+    @media (max-width: $mobile){
         display: none;
     }  
 }
