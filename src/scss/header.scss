@@ -392,18 +392,26 @@ button {
 		}
     }
     &__more-link{
-        text-transform: uppercase;
-		color: gray;
-		font-weight: 600;
-		line-height: math.div(22, 18);
-        &::after {
-            content: "\e900";
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+        color: grey;
+        transition: all 1.5s ease;
+        &:hover {
+			color: $mainGreen;
+			transition: all 1.5s ease;
+		}
+        &::before{
             font-size: rem(15);
-            align-items: center;
-            justify-content: center;
+            transform: rotate(90deg);
             transition: transform 0.3s ease 0s;
-            @extend %ic;
+            margin-left: rem(5);
         }
+        &._spoller-active {
+            &::before{
+            transform: rotate(-90deg);
+        }}
     }
     &__more-list {
         

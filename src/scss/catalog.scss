@@ -137,6 +137,7 @@
         background: #fff;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     &__title {
+        touch-action: none;
         width: 100%;
         background-color: $mainGreen;
         color: #fff;
@@ -146,6 +147,12 @@
         padding: rem(20) rem(30);
     }
     &__items {
+        @media (max-width: $tablet) {
+            display: none;
+        }
+        &._active {
+            display: block;
+        }
     }
     &__price {
     }
@@ -222,4 +229,7 @@
     &__checkbox {
         
     }
+    }
+    .clic {
+        display: none;
     }

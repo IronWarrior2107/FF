@@ -1,6 +1,6 @@
-import * as flsFunctions from "./files/functions.js";
-
 import "./files/jquery-3.6.1.min.js"
+
+import * as flsFunctions from "./files/functions.js";
 
 flsFunctions.isWebp();
 

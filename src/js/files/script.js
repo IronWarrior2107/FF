@@ -75,20 +75,6 @@ $(document).ready(function() {
     )});
 });
     
-
-$(document).ready(function(){
-	$('.sub-menu-catalog__more-link').click(function(){
-		$(this).prev('.sub-menu-catalog__more-list').slideToggle(300)( function(){
-			if ($(this).is(':hidden')) {
-				$('.sub-menu-catalog__more-link').html('Ещё');
-			} else {
-				$('.sub-menu-catalog__more-link').html('Скрыть');
-			}							
-		});
-		return false;
-	});
-});
-
 $(document).ready(function() {
     $('.sub-class').click(function() {
     $(this).siblings(".sub-catalog-сlosed").toggle(
@@ -119,3 +105,16 @@ $(document).ready(function(){
     $('.products-cards__like-button').click(function() {
         this.classList.toggle('liked');
     });
+    
+    
+    
+    var $filter = $(".filter-catalog__title");
+var mobilewidth = $(window).width();
+$filter.on('click', function() {
+    if (mobilewidth < 992 ) {
+        $(".filter-catalog__items").slideToggle();
+    }
+});
+$(window).resize(function() {
+    mobilewidth = $(window).width();
+});
