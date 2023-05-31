@@ -195,6 +195,7 @@
         width: 50%;
         height: rem(42);
         padding: 0px rem(15);
+        text-align: center;
         &:not(:last-child) {
             border-right: rem(1) solid #cbcbcb;
         }

@@ -15,7 +15,7 @@ export function rangeInit() {
 			const toValue = rangeItem.querySelector('[data-range-to]');
 			const item = rangeItem.querySelector('[data-range-item]');
 			noUiSlider.create(item, {
-				start: [Number(fromValue.value), Number(toValue.value)], // [0,200000]
+				start: [Number(fromValue.value), Number(toValue.value)],
 				connect: true,
 				tooltips: [true, true],
 				range: {
@@ -23,11 +23,24 @@ export function rangeInit() {
 					'max': [Number(toValue.dataset.rangeTo)]
 				}
 			});
-			item.noUiSlider.on('update', function (values, handle) {
-				fromValue.value = values[handle];
-				toValue.value = values[handle];
+			const inputs = [fromValue, toValue];
+			const setRangeSlider = (i, value) => {
+				let arr = [null, null];
+				arr[i] = value;
+				item.noUiSlider.set(arr);
+			};
+			inputs.forEach((el, index) => {
+				el.addEventListener('change', (e) => {
+					setRangeSlider(index, e.currentTarget.value);
+				});
+			});
+			item.noUiSlider.on('update', (values) => {
+				fromValue.value = Math.round(values[0]);
+				toValue.value = Math.round(values[1]);
 			});
 		});
 	}
+	
+	
 }
 rangeInit();
