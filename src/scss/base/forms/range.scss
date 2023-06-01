@@ -92,16 +92,16 @@
 	border-radius: 50%;
 }
 .noUi-vertical {
-	width: 18px;
+	width: rem(18);
 }
 .noUi-vertical .noUi-handle {
-	width: 28px;
-	height: 34px;
-	right: -6px;
-	bottom: -17px;
+	width: rem(28);
+	height: rem(34);
+	right: rem(-6);
+	bottom: rem(-17px);
 }
 .noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
-	left: -17px;
+	left: -rem(17);
 	right: auto;
 }
 /* Styling;
@@ -196,7 +196,7 @@
  *
  */
 .noUi-pips-horizontal {
-	padding: 10px 0;
+	padding: rem(10) 0;
 	height: rem(80);
 	top: 100%;
 	left: 0;
@@ -223,7 +223,7 @@
  *
  */
 .noUi-pips-vertical {
-	padding: 0 10px;
+	padding: 0 rem(10);
 	height: 100%;
 	top: 0;
 	left: 100%;
@@ -249,18 +249,16 @@
 .noUi-tooltip {
 	display: block;
 	position: absolute;
-	border: rem(1) solid #d9d9d9;
-	border-radius: 3px;
+	border-radius: rem(3);
 	background: #fff;
-	color: #000;
-	padding: 5px;
+	color: grey;
+	padding: rem(5);
 	text-align: center;
 	white-space: nowrap;
 }
 .noUi-horizontal .noUi-tooltip {
 	transform: translate(-50%, 0);
 	left: 50%;
-	bottom: 120%;
 }
 .noUi-vertical .noUi-tooltip {
 	transform: translate(0, -50%);

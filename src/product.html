@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html',{
+	"title":"Карточка товара"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/header.html',{})
+			<main class="page page_inner">
+				<div class="page__header">
+					<div class="page__container">
+						<h1 class="page__title title">Разделочные ножи</h1>
+						<nav class="page__breadcrumbs breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="" class="breadcrumbs__link">Главная</a>
+								</li>
+                                <li class="breadcrumbs__item">
+									<a href="" class="breadcrumbs__link">Каталог</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__current">Выбранный товар</span>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="product">
+                    <div class="product__container">
+                        <div class="product__main main-product">
+                            <div class="main-product__images images-product">
+                                <div class="images-product__slider">
+									<div class="images-product__swiper">
+										<div class="images-product__slide-ibg">
+											<img src="@img/products/01.jpg" alt="">
+										</div>
+										<div class="images-product__slide-ibg">
+											<img src="@img/products/02.jpg" alt="">
+										</div>
+										<div class="images-product__slide-ibg">
+											<img src="@img/products/03.jpg" alt="">
+										</div>
+										<div class="images-product__slide-ibg">
+											<img src="@img/products/04.jpg" alt="">
+										</div>
+										<div class="images-product__slide-ibg">
+											<img src="@img/products/05.jpg" alt="">
+										</div>
+									</div>
+								</div>
+                                <div class="images-product__thumbs thumbs-images">
+                                    <div class="thumbs-images__swiper">
+                                        <div class="thumbs-images__slide-ibg">
+                                            <img src="@img/products/05.jpg" alt="">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg">
+                                            <img src="@img/products/04.jpg" alt="">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg">
+                                            <img src="@img/products/03.jpg" alt="">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg">
+                                            <img src="@img/products/02.jpg" alt="">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg">
+                                            <img src="@img/products/01.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</main>
+			@@include('html/footer.html',{})
+		</div>
+		@@include('html/js.html',{})
+	</body>
+</html>
+
+

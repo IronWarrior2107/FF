@@ -160,6 +160,7 @@
     }
     }
     .price-filter {
+        overflow: hidden;
         padding: rem(15) rem(30);
     &__title {
         display: flex;
@@ -180,7 +181,7 @@
     }
     }
     &__body {
-        padding: rem(30) 0px 0px 0px;
+        padding: rem(30) 0px rem(30) 0px;
     }
     &__inputs {
         display: flex;

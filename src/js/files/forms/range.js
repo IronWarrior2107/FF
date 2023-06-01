@@ -21,7 +21,8 @@ export function rangeInit() {
 				range: {
 					'min': [Number(fromValue.dataset.rangeFrom)],
 					'max': [Number(toValue.dataset.rangeTo)]
-				}
+				},
+				format: wNumb({decimals: 0})
 			});
 			const inputs = [fromValue, toValue];
 			const setRangeSlider = (i, value) => {
