@@ -44,7 +44,7 @@ flsForms.formSubmit(true);
 //flsForms.formMasks(true);
 
 /* Модуль формы "колличество" */
-//flsForms.formQuantity();
+flsForms.formQuantity();
 
 /* Модуль формы "показать пароль" */
 //flsForms.formViewpass();

@@ -4,6 +4,9 @@
     }
     &__container {
         padding-left: rem(50);
+        @media (max-width: $tablet) {
+            padding: 0
+        }
     }
     &__title {
         font-weight: 700;
@@ -66,7 +69,7 @@
         &__products {
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(rem(250), rem(277)));
-            gap: rem(30);
+            gap: rem(15);
             &:not(:last-child) {
                 @include adaptiveValue("margin-bottom", 40, 20)
             }
@@ -197,12 +200,22 @@
         height: rem(42);
         padding: 0px rem(15);
         text-align: center;
-        &:not(:last-child) {
-            border-right: rem(1) solid #cbcbcb;
-        }
+        
     }
     &__range {
     }
+
+        &__inputs-label {
+            color: grey;
+            text-align: center;
+            &:not(:last-child) {
+                border-right: rem(1) solid #cbcbcb;
+            }
+        }
+        &__inputs-text {
+            
+        }
+        
     }
     .item-filter-catalog {
     &__title {

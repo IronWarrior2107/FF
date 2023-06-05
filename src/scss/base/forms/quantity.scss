@@ -11,7 +11,7 @@
 		height: rem(50);
 		position: relative;
 		cursor: pointer;
-		background-color: #000;
+		background-color: rgb(4, 255, 130);
 		&::before,
 		&::after {
 			content: "";
@@ -20,7 +20,7 @@
 			left: 50%;
 			transition: all 0.3s ease 0s;
 			margin: 0px 0px 0px -4.5px;
-			background-color: #a6a6a6;
+			background-color: #818181;
 			width: 9px;
 			height: 1px;
 		}

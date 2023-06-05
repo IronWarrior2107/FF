@@ -1,4 +1,4 @@
-const slider1 = new Swiper ('.swiper', {
+const slider1 = new Swiper ('.swiper-window', {
     speed: 400,
     spaceBetween: 10,
     navigation: {

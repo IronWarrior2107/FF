@@ -30,7 +30,7 @@
                         <div class="product__main main-product">
                             <div class="main-product__images images-product">
                                 <div class="images-product__slider">
-									<div class="images-product__swiper">
+									<div class="images-product__swipers">
 										<div class="images-product__slide-ibg">
 											<img src="@img/products/01.jpg" alt="">
 										</div>
@@ -47,27 +47,103 @@
 											<img src="@img/products/05.jpg" alt="">
 										</div>
 									</div>
+									<div class="swiper-button-prev"><img class="images-product__arrow" src="@img/svg/arrow-left.svg"></div>
+            						<div class="swiper-button-next"><img class="images-product__arrow" src="@img/svg/arrow-right.svg"></div>
 								</div>
                                 <div class="images-product__thumbs thumbs-images">
-                                    <div class="thumbs-images__swiper">
+                                    <div class="thumbs-images__swipers">
                                         <div class="thumbs-images__slide-ibg">
-                                            <img src="@img/products/05.jpg" alt="">
-                                        </div>
-                                        <div class="thumbs-images__slide-ibg">
-                                            <img src="@img/products/04.jpg" alt="">
-                                        </div>
-                                        <div class="thumbs-images__slide-ibg">
-                                            <img src="@img/products/03.jpg" alt="">
+                                            <img src="@img/products/01.jpg" alt="">
                                         </div>
                                         <div class="thumbs-images__slide-ibg">
                                             <img src="@img/products/02.jpg" alt="">
                                         </div>
                                         <div class="thumbs-images__slide-ibg">
-                                            <img src="@img/products/01.jpg" alt="">
+                                            <img src="@img/products/03.jpg" alt="">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg">
+                                            <img src="@img/products/04.jpg" alt="">
+                                        </div>
+                                        <div class="thumbs-images__slide-ibg">
+                                            <img src="@img/products/05.jpg" alt="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
+							<div class="main-product__body body-product">
+								<div class="body-product__header header-product">
+									<div class="header-product__line">
+										<h1 class="header-product__title">RTX 3060 TI (без хуникса)</h1>
+										<a href="" class="header-product__link _icon-favorite"></a>
+									</div>
+									<div class="header-product__rating rating rating_set">
+										<div class="rating__body">
+											<div class="rating__active"></div>
+											<div class="rating__items">
+												<input type="radio" class="rating__item" value="1" name="rating">
+												<input type="radio" class="rating__item" value="2" name="rating">
+												<input type="radio" class="rating__item" value="3" name="rating">
+												<input type="radio" class="rating__item" value="4" name="rating">
+												<input type="radio" class="rating__item" value="5" name="rating">
+											</div>
+										</div>
+										<div class="rating__value">5</div>
+									</div>
+								</div>
+								<div class="body-product__table table-product">
+									<div class="table-product__label">Комплектация</div>
+									<div class="table-product__value">Retail</div>
+									<div class="table-product__label">Назаначение</div>
+									<div class="table-product__value">Игровая</div>
+									<div class="table-product__label">Объем видеопамяти</div>
+									<div class="table-product__value">8гб</div>
+								</div>
+								<div class="body-product__options options-product">
+									<div class="options-product__label">Комплектация</div>
+									<div class="options-product__value">
+										<select name="form[]" class="form">
+											<option value="1" selected>Пункт №1</option>
+											<option value="2">Пункт №2</option>
+											<option value="3">Пункт №3</option>
+											<option value="4">Пункт №4</option>
+										</select>
+									</div>
+								</div>
+								<div class="body-product__actions actions-product">
+									<div class="actions-product__price">3 865</div>
+									<div class="actions-product__row">
+										<div class="actions-product__quantity quantity">
+											<button type="button" class="quantity__button quantity__button_plus"></button>
+											<div class="quantity__input">
+												<input autocomplete="off" type="text" name="form[]" value="1">
+											</div>
+											<button type="button" class="quantity__button quantity__button_minus"></button>
+										</div>
+										<div class="actions-product__buttons">
+											<a href="" class="actions-product__cart button"><span class="_icon-cart">Добавить в корзину</span></a>
+											<a href="" class="actions-product__button button button_green">Купить сейчас</a>
+										</div>
+									</div>
+							</div>
+							</div>
+							<div data-tabs="992" class="product__info product-info">
+								<nav data-tabs-titles class="product-info__navigation">
+									<button type="submit" class="product-info__title _tab-active">Описание товара</button>
+									<button type="submit" class="product-info__title">Подробные характеристики</button>
+									<button type="submit" class="product-info__title">Отзывы покупателей</button>
+								</nav>
+								<div data-tabs-body class="product-info__content">
+									<div class="product-info__body">
+										1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio exercitationem, excepturi similique nulla, voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit voluptate enim quo sed, minima error molestias!
+									</div>
+									<div class="product-info__body">
+										2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio exercitationem, excepturi similique nulla, voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit voluptate enim quo sed, minima error molestias!
+									</div>
+									<div class="product-info__body">
+										3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore odio exercitationem, excepturi similique nulla, voluptatem reprehenderit neque a minima eaque tenetur? Quos fugit voluptate enim quo sed, minima error molestias!
+									</div>
+								</div>
+							</div>
                         </div>
                     </div>
                 </div>

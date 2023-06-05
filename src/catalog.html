@@ -32,8 +32,16 @@
 										<button type="button" data-spoller class="price-filter__title _icon-arrow-bottom">Цена</button>
 										<div data-range class="price-filter__body" id="rangeSlider">
 											<div class="price-filter__inputs">
-												<input data-range-from="0" autocomplete="off" type="text" value="0" name="form[]" class="price-filter__input">
-												<input data-range-to="10000" autocomplete="off" type="text" value="10000" name="form[]" class="price-filter__input">
+                                                <label class="price-filter__inputs-label">
+                                                    <span class="price-filter__inputs-text">от</span>
+												        <input data-range-from="0" autocomplete="off" type="text" value="0" name="form[]" class="price-filter__input">
+                                                    <span class="price-filter__inputs-text">₽</span>
+                                                </label>
+                                                <label class="price-filter__inputs-label">
+                                                    <span class="price-filter__inputs-text">до</span>
+												        <input data-range-to="10000" autocomplete="off" type="text" value="10000" name="form[]" class="price-filter__input">
+                                                    <span class="price-filter__inputs-text">₽</span>
+                                                </label>
 											</div>
 											<div data-range-item class="price-filter__range"></div>
 										</div>

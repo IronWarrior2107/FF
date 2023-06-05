@@ -27,6 +27,10 @@
 		flex-direction: row-reverse;
 		&:before {
 			content: "";
+			font-size: rem(25);
+			@extend %ic;
+			content: "\e900";
+			margin-left: em(10, 8);
 			align-self: stretch;
 			flex: 0 0 10px;
 			transition: all 0.3s ease 0s;
@@ -146,3 +150,15 @@
 ._select-tag {
 	cursor: pointer;
 }
+.body-product {
+	
+	&__options {
+	}
+	&__label {
+	}
+	}
+	.options-product {
+	}
+	.control {
+	}
+	

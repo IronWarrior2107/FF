@@ -10,7 +10,8 @@
         padding: rem(11);
     }
 }
-.swiper {
+.swiper-window {
+    overflow: hidden;
     z-index: 11;
     position: relative;
     width: rem(1590);
@@ -58,14 +59,16 @@
 }
 .arrow {
     width: rem(50);
-    height: rem(50);
-    border: rem(1) solid darkslateblue;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    padding: 10px;
+        height: rem(50);
+        border: rem(1) solid darkslateblue;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: rem(10);
+        background-color: #fefefe;
+        opacity: 0.7;
     @media (max-width: $tablet) {
         display: none;
     }
@@ -86,6 +89,4 @@
     }
 }
 
-.swiper-height {
-    
-}
+
