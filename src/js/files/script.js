@@ -102,7 +102,7 @@ $(document).ready(function(){
     //     e.currentTarget.classList.toggle('liked');
     // });
 
-    $('.products-cards__like-button').click(function() {
+    $('.products-cards__like-button, .product-cart__like-button').click(function() {
         this.classList.toggle('liked');
     });
     

@@ -14,9 +14,6 @@
 		display: block;
 	}
 }
-._icon-mail:before {
-  content: "\e909";
-}
 ._icon-arrow-bottom:before {
   content: "\e900";
 }
@@ -32,30 +29,36 @@
 ._icon-clock:before {
   content: "\e904";
 }
-._icon-favorite:before {
+._icon-cross:before {
   content: "\e905";
 }
-._icon-favorite_1:before {
+._icon-favorite:before {
   content: "\e906";
 }
-._icon-location:before {
+._icon-favorite_1:before {
   content: "\e907";
 }
-._icon-logo:before {
+._icon-location:before {
   content: "\e908";
 }
-._icon-phone:before {
+._icon-logo:before {
+  content: "\e909";
+}
+._icon-mail:before {
   content: "\e90a";
 }
-._icon-ruble:before {
+._icon-phone:before {
   content: "\e90b";
 }
-._icon-search:before {
+._icon-ruble:before {
   content: "\e90c";
 }
-._icon-star:before {
+._icon-search:before {
   content: "\e90d";
 }
-._icon-user:before {
+._icon-star:before {
   content: "\e90e";
+}
+._icon-user:before {
+  content: "\e90f";
 }

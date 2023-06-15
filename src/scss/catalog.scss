@@ -2,12 +2,7 @@
     &__header {
         
     }
-    &__container {
-        padding-left: rem(50);
-        @media (max-width: $tablet) {
-            padding: 0
-        }
-    }
+    
     &__title {
         font-weight: 700;
         font-size: rem(24);
@@ -68,7 +63,7 @@
         }
         &__products {
             display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(rem(250), rem(277)));
+            grid-template-columns: repeat(auto-fit,minmax(rem(200), rem(290)));
             gap: rem(15);
             &:not(:last-child) {
                 @include adaptiveValue("margin-bottom", 40, 20)
@@ -198,7 +193,6 @@
     &__input {
         width: 50%;
         height: rem(42);
-        padding: 0px rem(15);
         text-align: center;
         
     }

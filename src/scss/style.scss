@@ -132,20 +132,13 @@ body {
 // Подключение базовых стилей, шаблонов (заготовок) и вспомагательных классов
 // Для подключения/отключения конкретных стилей смотри base.scss
 @import "base";
-
-// Подключение стилей общих элементов проекта
-//@import "common";
-
-// Подключение стилей отдельных блоков
 @import "header";
-
-// Подключение стилей отдельных страниц
-// @import "home";
 @import "catalog";
 @import "product";
 @import "swiper";
 @import "catalog-cards";
 @import "product-slider";
+@import "shoppingCart";
 @import "footer";
 @import "base/swiper.scss";
 .page {

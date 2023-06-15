@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html',{
+	"title":"Корзина"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/header.html',{})
+			<main class="page page_inner">
+				<div class="page__header">
+					<div class="page__container">
+						<h1 class="page__title title">Корзина</h1>
+						<nav class="page__breadcrumbs breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__current">Корзина</span>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+                <div class="cart">
+                    <div class="cart__container">
+                        <div class="cart__main main-cart">
+                            <div class="main-cart__description description-item">
+                                <div class="description-item__label">Количество товаров в корзине:</div>
+                                <div class="description-item__text"><span>21</span>товар</div>
+                            </div>
+                            <div class="main-cart__all all-cart">
+								<ul class="all-cart__functions">
+									<li class="all-cart__checkbox checkbox">
+                                        <input id="c_1" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+                                        <label for="c_1" class="checkbox__label"><span class="checkbox__text">Выбрать все<small>(21)</small></span></label>
+                                    </li>
+									<li class="all-cart__function">
+										<a href="" class="all-cart__delete _icon-cross">
+											<div class="all-cart__delete-text">Удалить<span>(21)</span></div> 
+										</a>
+									</li>
+								</ul>
+                            </div>
+							<div class="main-cart__products">
+								<div class="main-cart__products-wrapper">
+									<div class="main-cart__signboard signboard-cart">
+										<div class="signboard-cart__text">Ваши товары</div>
+									</div>
+									<div class="main-cart__product product-cart">
+										<div class="product-cart__checkbox checkbox">
+											<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_2" class="checkbox__label"></label>
+										</div>
+										<div class="product-cart__image">
+											<img src="@img/products/03.jpg" alt="">
+										</div>
+										<div class="product-cart__information">
+											<div class="product-cart__name">Видеокарта RTX 3060 TI (без хуникса)</div>
+											<div class="product-cart__seller">Nvidia</div>
+											<div class="product-cart__buttons">
+												<button type="button" class="product-cart__like-button"><span class="product-cart__like _icon-favorite"></span><div class="product-cart__text">В избранное</div></button>
+												<button type="button" href="" class="product-cart__delete _icon-cross"><div class="product-cart__text">Удалить</div></button>
+											</div>
+										</div>
+										<div class="product-cart__functions">
+												<div class="product-cart__price">9999</div>
+												<div class="product-cart__discount-price">10000</div>
+											<div class="product-cart__quantity quantity">
+												<button type="button" class="quantity__button quantity__button_plus"></button>
+												<div class="quantity__input">
+													<input autocomplete="off" type="text" name="form[]" value="1">
+												</div>
+												<button type="button" class="quantity__button quantity__button_minus"></button>
+											</div>
+										</div>
+									</div>
+									<div class="main-cart__product product-cart">
+										<div class="product-cart__checkbox checkbox">
+											<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_2" class="checkbox__label"></label>
+										</div>
+										<div class="product-cart__image">
+											<img src="@img/products/03.jpg" alt="">
+										</div>
+										<div class="product-cart__information">
+											<div class="product-cart__name">Видеокарта RTX 3060 TI (без хуникса)</div>
+											<div class="product-cart__seller">Nvidia</div>
+											<div class="product-cart__buttons">
+												<button type="button" class="product-cart__like-button"><span class="product-cart__like _icon-favorite"></span><div class="product-cart__text">В избранное</div></button>
+												<button type="button" href="" class="product-cart__delete _icon-cross"><div class="product-cart__text">Удалить</div></button>
+											</div>
+										</div>
+										<div class="product-cart__functions">
+												<div class="product-cart__price">9999</div>
+												<div class="product-cart__discount-price">10000</div>
+												<div class="product-cart__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="main-cart__product product-cart">
+										<div class="product-cart__checkbox checkbox">
+											<input id="c_2" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+											<label for="c_2" class="checkbox__label"></label>
+										</div>
+										<div class="product-cart__image">
+											<img src="@img/products/03.jpg" alt="">
+										</div>
+										<div class="product-cart__information">
+											<div class="product-cart__name">Видеокарта RTX 3060 TI (без хуникса)</div>
+											<div class="product-cart__seller">Nvidia</div>
+											<div class="product-cart__buttons">
+												<button type="button" class="product-cart__like-button"><span class="product-cart__like _icon-favorite"></span><div class="product-cart__text">В избранное</div></button>
+												<button type="button" href="" class="product-cart__delete _icon-cross"><div class="product-cart__text">Удалить</div></button>
+											</div>
+										</div>
+										<div class="product-cart__functions">
+												<div class="product-cart__price">9999</div>
+												<div class="product-cart__discount-price">10000</div>
+												<div class="product-cart__quantity quantity">
+													<button type="button" class="quantity__button quantity__button_plus"></button>
+													<div class="quantity__input">
+														<input autocomplete="off" type="text" name="form[]" value="1">
+													</div>
+													<button type="button" class="quantity__button quantity__button_minus"></button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="main-cart__decoration decoration-cart">
+									<div class="decoration-cart__none">
+										<a href="" class="decoration-cart__none-button button button_green">Перейти к оформлению</a>
+										<div class="decoration-cart__none-text">Выберите товары, что бы продолжить</div>
+									</div>
+									<div class="decoration-cart__ordering">
+										<a href="" class="decoration-cart__ordering-button button button_green">Перейти к оформлению</a>
+										<div class="decoration-cart__ordering-information">
+											<div class="decoration-cart__ordering-parametrs">
+												<div class="decoration-cart__ordering-quantity">Всего <span>N</span> товаров</div>
+												<div class="decoration-cart__ordering-weight">По <span>N</span> кг</div>
+												<div class="decoration-cart__ordering-price">N</div>
+											</div>
+											<div data-spollers class="decoration-cart__ordering-product-information">
+												<div class="decoration-cart__ordering-product-information-wrapper">
+													<button type="button" data-spoller class="decoration-cart__ordering-product-information-more-link">Скидка</button>
+													<div class="decoration-cart__ordering-product-information-list">
+                                                        <div class="decoration-cart__ordering-product-information-discount">Скидка<span>1</span></div>
+														<div class="decoration-cart__ordering-product-information-discount">Промокод<span>1</span></div>
+														<div class="decoration-cart__ordering-product-information-discount">За красивые глаза<span>1</span></div>
+                                                    </div>
+												</div>
+												<div class="decoration-cart__ordering-product-information-sale">3</div>
+											</div>
+											<div class="decoration-cart__ordering-total-price">Итого <span>9999</span></div>
+											<div class="decoration-cart__promocode">
+												<form action="#" class="decoration-cart__promocode">
+													<button type="submit" class="decoration-cart__button">Применить</button>
+													<input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="Ввести промокод" class="decoration-cart__input">
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+                        </div>
+                    </div>
+                </div>
+			</main>
+			@@include('html/footer.html',{})
+		</div>
+		@@include('html/js.html',{})
+	</body>
+</html>
+
+

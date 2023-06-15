@@ -166,15 +166,39 @@
     &__price {
         display: block;
         font-weight: 600;
-        font-size: rem(19);
+        font-size: rem(15);
         line-height: math.div(34, 20);
         color: gray;
-        text-decoration: line-through;
+        width: 100%;
+        &::after {
+            content: "\e90c";
+            font-size: rem(20);
+            align-items: center;
+            transition: transform 0.3s ease 0s;
+            @extend %ic;
+            text-decoration: none;
+        }
+        &::before {
+            position: absolute;
+            content: ' ';
+            width: 20%;
+            height: rem(2);
+            top: rem(365);
+            background-color: $mainGreen;  
+        }
     }
     &__sale-price {
         font-weight: 600;
         font-size: rem(25);
         line-height: math.div(34, 20);
+        &::after {
+            content: "\e90c";
+            font-size: rem(20);
+            align-items: center;
+            transition: transform 0.3s ease 0s;
+            @extend %ic;
+            text-decoration: none;
+        }
     }
     &__sale {
         display: flex;
@@ -207,9 +231,6 @@
             &::before{
                 margin: 0px 0px 0px rem(16);
             }
-        }
-        @media (max-width: $mobile) {
-            
         }
     }
     &__like-button {

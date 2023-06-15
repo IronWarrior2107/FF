@@ -22,15 +22,21 @@
 		display: inline-flex;
 		align-items: center;
 		position: relative;
-		gap: 10px;
+		gap: rem(10);
+		@media (max-width: $tablet) {
+			gap: 0;
+		}
 		&:before {
 			content: "";
 			align-self: flex-start;
 			flex: 0 0 rem(20);
 			width: rem(20);
 			height: rem(20);
-			border: 1px solid #63ec51;
-			border-radius: 2px;
+			border: rem(1) solid #63ec51;
+			border-radius: rem(2);
+			@media (max-width: $tablet) {
+				align-self: center;
+			}
 		}
 		&::after {
 			content: "";
@@ -38,11 +44,14 @@
 			transform: scale(0);
 			position: absolute;
 			width: rem(16);
-			border-radius: 2px;
+			border-radius: rem(2);
 			height: rem(16);
-			top: 2px;
-			left: 2px;
+			top: rem(2);
+			left: rem(2);
 			background-color: #63ec51;
+			@media (max-width: $tablet) {
+				top: rem(2);
+			}
 		}
 	}
 	// .checkbox__text
